@@ -30,6 +30,6 @@ pet_drs('test_folder',[4102,4202],'rsah',1)
 pet_drs('test_folder','Right SAH','rsah',1)
 
 # Notes
-We would like to emphasize that this tool should be used to supplement other clinical data and not to guide surgery on its own. Note that as per Sainburg et al., 2024, a PET DRS < 0.22 is suggestive of an Engel I outcome after surgery.
+We would like to emphasize that this tool should be used to supplement other clinical data and not to guide surgery on its own.
 
 We encourage others to edit and adjust this algorithm to their own needs. For example, other *anatomically symmetric* atlases could be substituted for the AAL atlas
