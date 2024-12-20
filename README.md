@@ -3,7 +3,9 @@ PET DRS algorithm to assess targeting of lateralized hypometabolism for epilepsy
 
 # Prerequisites
 SPM12 is a prerequesite to run this script and can be downloaded here for free: https://www.fil.ion.ucl.ac.uk/spm/software/spm12/
+
 *Make sure that SPM12 is in your path when running this script
+
 Note that this script was developed and tested using MATLAB 2021a.
 
 # Inputs
@@ -20,7 +22,7 @@ Registration
 Once this script is run the first time on a patient's data with reg = 1, the registration information has been saved and reg can be set to 0 for subsequent tests of alternative resections to decrease processing time.
 
 # Outputs
-A swarmchart will be outputted with the PET DRS score, along with a PET_LI.nii image. The PET_LI.nii image can be overlaid on the wT1.nii image (patient's T1 in MNI space) or the MNI template for visualization (see examples in Sainburg et al., 2024). Note that as per Sainburg et al., 2024, a PET DRS < 0.22 is suggestive of an Engel I outcome after surgery.
+A swarmchart will be outputted with the PET DRS score, along with a PET_LI.nii image. Several other intermediate images will also be generated during the registration process. The PET_LI.nii image can be overlaid on the wT1.nii image (patient's T1 in MNI space) or the MNI template for visualization (see examples in Sainburg et al., 2024). Note that as per Sainburg et al., 2024, a PET DRS < 0.22 is suggestive of an Engel I outcome after surgery.
 
 # Example Usage (put T1.nii and PET.nii in "test_folder"):
 Resection of right amygdala and hippocampus (right selective amygdalohippocampectomy):
