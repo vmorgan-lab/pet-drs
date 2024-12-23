@@ -5,7 +5,7 @@
 % SPM12 is a prerequisite for this script
 
 % This script runs the PET DRS algorithm, as outlined in Sainburg et al.,
-% 2024. The algorithm takes presurgical FDG-PET and T1-weighted images along
+% 2025. The algorithm takes presurgical FDG-PET and T1-weighted images along
 % with regions that are planned to be resected and returns a region-wise 
 % PET laterality map along with a PET DRS measure. This algorithm can be
 % used to obtain PET DRS measures during epilepsy surgery planning to
@@ -36,13 +36,12 @@ function pet_drs(parent_dir,res_labels,sim_res_fname,reg)
 
 % reg: 1 or 0 (default = 1); whether to register the PET to MNI space. This
 % can be set to 0 if PET was already warped to MNI space by running this 
-% code (in 3x3x3mm) and the user only wants to recalculate PET DRS. Note:
-% if PET was registered to MNI without this program, you will want to name
-% the file 'wrPET.nii' to match this script.
+% code and the user only wants to recalculate PET DRS.
 
 % OUTPUTS:
 
-% PET_LI.nii: AAL parcellation of PET Laterality map
+% PET_LI.nii: AAL parcellation of PET Laterality map (overlay on wT1.nii or
+% MNI template to visualize)
 % PET DRS Value report (pet DRS and resected region names)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
