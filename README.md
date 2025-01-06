@@ -15,7 +15,7 @@ This script takes T1-weighted MRI and FDG-PET images in NIFTI format as inputs. 
 
 Resection
 
-The regions in the planned resection are be defined using the AAL atlas (see AAL_regions.txt). Users input a vector of numbers corresponding to the labels (third column in AAL_regions.txt) of the regions to be resected. Users can also use one of the predefined resections within the code ('Right ATL', 'Left ATL', 'Right SAH', or 'Left SAH').
+The regions in the planned resection are to be defined using the AAL atlas (see AAL_regions.txt). Users input a vector of numbers corresponding to the labels (third column in AAL_regions.txt) of the regions to be resected. Users can also use one of the predefined resections within the code ('Right ATL', 'Left ATL', 'Right SAH', or 'Left SAH').
 
 Registration
 
