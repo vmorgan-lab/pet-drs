@@ -1,5 +1,5 @@
 # PET DRS
-PET DRS algorithm to assess targeting of lateralized hypometabolism for epilepsy surgery planning.
+PET DRS algorithm to assess targeting of lateralized FDG-PET hypometabolism for epilepsy surgery planning.
 
 # Prerequisites
 SPM12 is a prerequesite to run this script and can be downloaded here for free: https://www.fil.ion.ucl.ac.uk/spm/software/spm12/
