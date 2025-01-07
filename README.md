@@ -22,7 +22,7 @@ Registration
 Once this script is run the first time on a patient's data with reg = 1, the registration information has been saved and reg can be set to 0 for subsequent tests of alternative resections to decrease processing time.
 
 # Outputs
-A swarmchart will be outputted with the PET DRS score, along with a PET_LI.nii image. Several other intermediate images will also be generated during the registration process. The PET_LI.nii image can be overlaid on the wT1.nii image (patient's T1 in MNI space) or the MNI template for visualization (see examples in Sainburg et al., 2025). Note that as per Sainburg et al., 2025, a PET DRS < 0.22 is suggestive of an Engel I outcome after surgery.
+A swarmchart will be outputted with the PET DRS score, along with a PET_LI.nii image. Several other intermediate images will also be generated during the registration process. The PET_LI.nii image can be overlaid on the wT1.nii image (patient's T1 in MNI space) or the MNI template for visualization (see examples made with MRIcroGL (https://www.nitrc.org/projects/mricrogl) in Sainburg et al., 2025). Note that as per Sainburg et al., 2025, a PET DRS < 0.22 is suggestive of an Engel I outcome after surgery.
 
 # Example Usage (put T1.nii and PET.nii in "test_folder"):
 Resection of right amygdala and hippocampus (right selective amygdalohippocampectomy):
