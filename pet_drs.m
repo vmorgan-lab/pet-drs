@@ -134,16 +134,24 @@ matlabbatch{2}.spm.spatial.coreg.estwrite.roptions.wrap = [0 0 0];
 matlabbatch{2}.spm.spatial.coreg.estwrite.roptions.mask = 0;
 matlabbatch{2}.spm.spatial.coreg.estwrite.roptions.prefix = 'r';
 
-% Register T1 and PET to MNI
+% Warp T1 to MNI
 matlabbatch{3}.spm.spatial.normalise.write.subj.def = {fullfile(parent_dir,'y_T1.nii')};
-matlabbatch{3}.spm.spatial.normalise.write.subj.resample = {[fullfile(parent_dir,'T1.nii'),',1']
-                                                            [fullfile(parent_dir,'rPET.nii'),',1']
-                                                            [fullfile(parent_dir,'c1T1.nii'),',1']};
+matlabbatch{3}.spm.spatial.normalise.write.subj.resample = {[fullfile(parent_dir,'T1.nii'),',1']};
 matlabbatch{3}.spm.spatial.normalise.write.woptions.bb = [Inf Inf Inf
                                                           Inf Inf Inf];
-matlabbatch{3}.spm.spatial.normalise.write.woptions.vox = [3 3 3];
+matlabbatch{3}.spm.spatial.normalise.write.woptions.vox = [1 1 1];
 matlabbatch{3}.spm.spatial.normalise.write.woptions.interp = 4;
 matlabbatch{3}.spm.spatial.normalise.write.woptions.prefix = 'w';
+
+% Warp PET to MNI
+matlabbatch{4}.spm.spatial.normalise.write.subj.def = {fullfile(parent_dir,'y_T1.nii')};
+matlabbatch{4}.spm.spatial.normalise.write.subj.resample = {[fullfile(parent_dir,'rPET.nii'),',1']
+                                                            [fullfile(parent_dir,'c1T1.nii'),',1']};
+matlabbatch{4}.spm.spatial.normalise.write.woptions.bb = [Inf Inf Inf
+                                                          Inf Inf Inf];
+matlabbatch{4}.spm.spatial.normalise.write.woptions.vox = [3 3 3];
+matlabbatch{4}.spm.spatial.normalise.write.woptions.interp = 4;
+matlabbatch{4}.spm.spatial.normalise.write.woptions.prefix = 'w';
 
 spm_jobman('run',matlabbatch)
 
