@@ -42,7 +42,7 @@ function pet_drs(parent_dir,res_labels,sim_res_fname,reg)
 
 % PET_LI.nii: AAL parcellation of PET Laterality map (overlay on wT1.nii or
 % MNI template to visualize)
-% PET DRS Value report (pet DRS and resected region names)
+% PET DRS Value report in sim_res_fname (pet DRS and resected region names)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EXAMPLE
