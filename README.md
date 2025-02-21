@@ -33,7 +33,7 @@ The PET laterality image will be outputted into the parent directory and named P
 Simulated Resection Result
 
 A folder with the name of the sim_res_fname you have defined will be placed in the parent directory and contain a swarmchart PNG with the PET DRS score of the resection, along with a .txt file containing the regions defined as resected.
-Note that as per Sainburg et al., 2025, a PET DRS < 0.22 is suggestive of an Engel I outcome after surgery.
+Note that as per Sainburg et al., 2025, a PET DRS < 0.22 would be considered a favorable score.
 
 # Example Usage (put T1.nii and PET.nii in "test_folder"):
 Resection of right amygdala and hippocampus (right selective amygdalohippocampectomy):
