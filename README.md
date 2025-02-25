@@ -42,5 +42,8 @@ pet_drs('test_folder',[4102,4202],'rsah',1)
 
 pet_drs('test_folder','Right SAH','rsah',1)
 
+# Example Report
+See pet_drs_report_example.pdf for an example of how this code could be used to generate a report for a patient's FDG-PET scan.
+
 # Notes
 We encourage others to edit and adjust this algorithm to their own needs. For example, other *anatomically symmetric* atlases could be substituted for the AAL atlas
